@@ -49,7 +49,7 @@
         background: #35C295 !important;
     }
 
-    .deco {
+    /* .deco {
         position: absolute;
         width: 333px;
         height: 333px;
@@ -57,17 +57,17 @@
         bottom: -10%;
         background: #35C295;
         filter: blur(76.2px);
-    }
+    } */
 
     .deco-box {
         width: 1px;
-        height: 310px;
+        height: 250px;
         position: relative;
     }
 
     .deco-box::after {
         width: 1px;
-        height: 310px;
+        height: 250px;
         background: #35C295;
         position: absolute;
         content: '';
@@ -84,46 +84,106 @@
 
 <body>
     <div class="resume shadow-sm bg-white p-3 my-lg-5 position-relative overflow-hidden">
-        <div class="container mt-3 mt-lg-5">
-            <div class="row d-flex">
-                <div class="col-md-5 info">
-                    <div class="border border-2 border-green rounded-circle bg-info mt-2"
+        <div class="container mt-3 mt-lg-4">
+            <div class="row">
+                <div class="col-lg-5 info">
+                    <div class="border border-2 border-green rounded-circle bg-info"
                         style="width: 150px; height: 150px; overflow: hidden;">
                         <img src="./assets/images/Intersect.png" alt="picture" class="picture" width="150" height="150"
                             style="object-fit: cover;">
                     </div>
-                    <h1 class="mt-2 fs-3 fw-bold">鄭羽雯</h1>
+                    <h1 class="my-2 my-lg-3 fs-3 fw-bold">鄭羽雯</h1>
                     <div style="border: 1px solid #221006;"></div>
                     <h2 class="mt-2 fs-5 fw-bold">應徵職位：前端工程師</h2>
-                    <ul class="connect list-unstyled mt-3">
+                    <ul class="connect list-unstyled my-3 my-lg-4">
                         <li>
                             <i class="bi bi-geo-alt me-1"></i>
                             期望上班地點：台北市
                         </li>
-                        <li class="mt-1">
+                        <li class="mt-1 mt-lg-2">
                             <i class="bi bi-envelope me-1"></i>
                             <a class="text-dark text-decoration-none"
                                 href="mailto:sonyt605@gmail.com">sonyt605@gmail.com</a>
                         </li>
-                        <li class="mt-1">
+                        <li class="mt-1 mt-lg-2">
                             <i class="bi bi-telephone me-1"></i>
                             <a class="text-dark text-decoration-none" href="tel:+0987277936">0987277936</a>
 
                         </li>
-                        <li class="mt-1">
+                        <li class="mt-1 mt-lg-2">
                             <i class="bi bi-github me-1"></i>
                             <a class="text-dark" target="_blank"
                                 href="https://github.com/Ariel0508">https://github.com/Ariel0508</a>
                         </li>
                     </ul>
                     <p>
-                        擁有實體零售、行政與電商營運背景，因熱愛實際解決問題與提升流程效率，開始學習前端技術，
+                        擁有實體零售、行政與電商營運背景，因熱愛實際解決問題與提升流程效率，開始學習前端技術，<br>
                         從 UI/UX 邏輯與使用者流程出發，逐步掌握 Vue / React
                         框架並建置互動式網頁。<br>
                         期望將跨領域經驗與程式開發結合，為用戶打造更直覺、友善的介面。
                     </p>
                 </div>
-                <div class="col-md-7 skills">
+                <div class="col-lg-7 project">
+                    <h2 class="fs-4 fw-bold">專案</h2>
+                    <div class="mt-3 mt-lg-2 border-green border"></div>
+                    <div class="project-item">
+                        <div class="row mb-2 mt-3">
+                            <div class="col-6 col-lg-5">
+                                <img class="object-fit-cover" src="./assets/images/thumbnail1.jpg" alt="project-picture"
+                                    width="100%" height="130px" style="border: 2px solid #35C295;border-radius: 4px;">
+                            </div>
+                            <div class="col-6 col-lg-7">
+                                <div class="project-title fw-bold d-flex align-items-center text-green">餘味尋蹤<span
+                                        class="badge badge-green ms-2">團隊</span></div>
+                                <a href="https://ariel0508.github.io/flavor-trail-react/#/" target="_blank"
+                                    class="demo text-green">Demo</a>
+                                •
+                                <a href="https://github.com/Ariel0508/flavor-trail-react" target="_blank"
+                                    class="github text-green">GitHub</a>
+                                <div class="project-date">
+                                    2024/09 - 2025/03
+                                </div>
+                                <div class="project-tag mt-1">#React #Redux Toolkit #GSAP #React Hook Form #Swiper</div>
+                            </div>
+                        </div>
+                        <p>剩食分享平台，用戶可發布貼文分享、申請領取剩餘的食物，促進資源共享並減少浪費。平台支持貼文發佈、搜尋篩選、預約領取和社群互動功能。</p>
+                        <ul>
+                            <li>運用 Redux Toolkit 管理登入狀態</li>
+                            <li>實現響應式導航和動態篩選搜尋功能</li>
+                            <li>使用 React Router 建構單頁應用路由系統</li>
+                        </ul>
+                    </div>
+                    <div class="project-item mt-4">
+                        <div class="row mb-2 mt-3">
+                            <div class="col-6 col-lg-5">
+                                <img class="object-fit-cover" src="./assets/images/thumbnail2.png" alt="project-picture"
+                                    width="100%" height="130px" style="border: 2px solid #35C295;border-radius: 4px;">
+                            </div>
+                            <div class="col-6 col-lg-7">
+                                <div class="project-title fw-bold d-flex align-items-center text-green">Cat Paws<span
+                                        class="badge badge-green ms-2">個人</span></div>
+                                <a href="https://ariel0508.github.io/cat-paws/#/" target="_blank"
+                                    class="demo text-green">Demo</a>
+                                •
+                                <a href="https://github.com/Ariel0508/cat-paws" target="_blank"
+                                    class="github text-green">GitHub</a>
+                                <div class="project-date">
+                                    2024/01 - 2024/04
+                                </div>
+                                <div class="project-tag mt-1">#Vue #Vee validate #Vite #Pinia #Bootstrap #Axios </div>
+                            </div>
+                        </div>
+                        <p>這是個貓咪服飾、配件電商平台，用戶可以將商品加入購物車、結帳送出訂單、套用優惠券。後台可以編輯、新增和刪除商品。</p>
+                        <ul>
+                            <li>利用 Composition API 進行程式狀態管理和邏輯重用</li>
+                            <li>使用 Bootstrap 框架來撰寫 CSS 和響應式網頁設計(RWD)</li>
+                            <li>表單驗證功能，確保用戶輸入有效性的資料。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 skills mt-3">
                     <h2 class="fs-4 fw-bold">技能</h2>
                     <div class="mt-3 mt-lg-2 border-green border"></div>
                     <h3 class="fs-6 fw-bold text-green mt-2">React</h3>
@@ -154,8 +214,8 @@
                         <li>實作動畫效果與互動體驗</li>
                     </ul>
                 </div>
-                <div class="col-md-5 experience">
-                    <h2 class="fs-4 fw-bold mt-lg-5">學經歷</h2>
+                <div class="col-lg-5 experience mt-3">
+                    <h2 class="fs-4 fw-bold">學經歷</h2>
                     <div class="mt-3 mt-lg-2 border-green border"></div>
                     <div class="mt-3 d-flex">
                         <div class="mt-1 deco-box d-flex flex-column justify-content-between align-items-center">
@@ -168,98 +228,39 @@
                             <div class="mt-1">
                                 <div class="text-green fw-bold">ClassicTrend 試穿工作室 | 電商行政助理</div>
                                 <div class="fs-7 mt-2">
-                                    2023/06 - 2024/03<br>
-                                    累積電商營運的多元經驗，熟悉使用者需求與偏好、流程優化與前後台系統操作。
+                                    2023/06 ~ 2024/03<br>
+                                    累積電商營運的多元經驗，熟悉使用者需求與偏好。
                                 </div>
                             </div>
                             <div class="mt-2">
                                 <div class="text-green fw-bold">麗嬰國際股份有限公司 | 門市人員</div>
                                 <div class="fs-7 mt-2">
-                                    2023/06 - 2024/03<br>
-                                    熟悉後台互動操作，能從用戶視角出發，設計符合需求且直觀的介面邏輯。培養面向客戶的溝通能力及問題解決技能。
+                                    2020/11 ~ 2022/02<br>
+                                    熟悉後台系統的使用，能以使用者視角分析介面設計與體驗。
                                 </div>
                             </div>
                             <div class="mt-2">
                                 <div class="text-green fw-bold">時代國際英日韓語補習班 | 行政客服</div>
                                 <div class="fs-7 mt-2">
-                                    2023/06 - 2024/03<br>
-                                    具備櫃台行政與課程協助的經驗，熟練掌握線上系統與文書工具，能快速掌握工作流程與工具。
+                                    2020/03 ~ 2020/09<br>
+                                    具備櫃台行政的經驗，能快速掌握工作流程與工具。
                                 </div>
                             </div>
                             <div class="mt-2">
                                 <div class="text-green fw-bold">世新大學 | 經濟系</div>
                                 <div class="fs-7 mt-2">
-                                    2023/06 - 2024/03<br>
-                                    培養邏輯思維與數據分析能力，能結合經濟背景提升技術開發的實用性與系統化。
+                                    2016/9 - 2020/6<br>
+                                    培養邏輯思維與數據分析能力。
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 project">
-                    <h2 class="fs-4 fw-bold mt-3 mt-lg-5">專案</h2>
-                    <div class="mt-3 mt-lg-2 border-green border"></div>
-                    <div class="project-item">
-                        <div class="row mb-2 mt-3">
-                            <div class="col-6 col-lg-5">
-                                <img class="object-fit-cover" src="./assets/images/thumbnail1.jpg" alt="project-picture"
-                                    width="100%" height="130px" style="border: 2px solid #35C295;border-radius: 4px;">
-                            </div>
-                            <div class="col-6 col-lg-7">
-                                <div class="project-title fw-bold d-flex align-items-center text-green">餘味尋蹤<span
-                                        class="badge badge-green ms-2">團隊</span></div>
-                                <a href="https://ariel0508.github.io/flavor-trail-react/#/" target="_blank"
-                                    class="demo text-green">Demo</a>
-                                •
-                                <a href="https://github.com/Ariel0508/flavor-trail-react" target="_blank"
-                                    class="github text-green">GitHub</a>
-                                <div class="project-date">
-                                    2024/09 - 2025/03
-                                </div>
-                                <div class="project-tag mt-1">#React #Redux Toolkit #GSAP #React Hook Form #Swiper</div>
-                            </div>
-                        </div>
-                        <p>這是個剩食分享平台，用戶可發布和申請剩餘食物，促進資源共享並減少浪費。平台支持貼文發佈、搜尋篩選、預約領取和社群互動功能。</p>
-                        <ul>
-                            <li>運用 Redux Toolkit 管理登入狀態</li>
-                            <li>實現響應式導航和動態篩選搜尋功能</li>
-                            <li>使用 React Router 建構單頁應用路由系統</li>
-                        </ul>
-                    </div>
-                    <div class="project-item">
-                        <div class="row mb-2 mt-3">
-                            <div class="col-6 col-lg-5">
-                                <img class="object-fit-cover" src="./assets/images/thumbnail2.png" alt="project-picture"
-                                    width="100%" height="130px" style="border: 2px solid #35C295;border-radius: 4px;">
-                            </div>
-                            <div class="col-6 col-lg-7">
-                                <div class="project-title fw-bold d-flex align-items-center text-green">Cat Paws<span
-                                        class="badge badge-green ms-2">個人</span></div>
-                                <a href="https://ariel0508.github.io/cat-paws/#/" target="_blank"
-                                    class="demo text-green">Demo</a>
-                                •
-                                <a href="https://github.com/Ariel0508/cat-paws" target="_blank"
-                                    class="github text-green">GitHub</a>
-                                <div class="project-date">
-                                    2024/01 - 2024/04
-                                </div>
-                                <div class="project-tag mt-1">#Vue #Vee validate #Vite #Pinia #Bootstrap #Axios </div>
-                            </div>
-                        </div>
-                        <p>這是個貓咪服飾、配件電商平台，用戶可以將商品加入購物車、結帳送出訂單、套用優惠券。後台可以編輯、新增和刪除商品。</p>
-                        <ul>
-                            <li>利用 Composition API 進行程式狀態管理和邏輯重用</li>
-                            <li>使用 Bootstrap 框架來撰寫 CSS 和響應式網頁設計(RWD)</li>
-                            <li>表單驗證功能，確保用戶輸入有效性的資料。</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="deco d-none d-lg-block"></div>
+
+                <!-- <div class="deco d-none d-lg-block"></div> -->
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
