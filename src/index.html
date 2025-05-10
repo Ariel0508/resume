@@ -80,11 +80,15 @@
         border-radius: 50%;
         position: relative;
     }
+
+    ul {
+        padding-left: 1.5rem;
+    }
 </style>
 
 <body>
     <div class="resume shadow-sm bg-white p-3 my-lg-5 position-relative overflow-hidden">
-        <div class="container mt-3 mt-lg-4">
+        <div class="container my-3 my-lg-4">
             <div class="row">
                 <div class="col-lg-5 info">
                     <div class="border border-2 border-green rounded-circle bg-info"
@@ -117,10 +121,9 @@
                         </li>
                     </ul>
                     <p>
-                        擁有實體零售、行政與電商營運背景，因熱愛實際解決問題與提升流程效率，開始學習前端技術，<br>
-                        從 UI/UX 邏輯與使用者流程出發，逐步掌握 Vue / React
-                        框架並建置互動式網頁。<br>
-                        期望將跨領域經驗與程式開發結合，為用戶打造更直覺、友善的介面。
+                        具備電商營運、行政管理與門市第一線經驗，深入理解使用者需求，並善於思考流程優化與體驗提升。因熱衷於解決問題與提升效率，轉而投入前端開發領域，自學並熟悉 <span class="fw-bold">React、Vue</span> 等框架，具備 <span class="fw-bold">API</span>
+                        串接<span class="fw-bold">（Axios）</span>與狀態管理<span class="fw-bold">（Redux Toolkit / Pinia）</span>等實作經驗。熟悉 <span class="fw-bold">GitHub</span> 版本控制與 <span class="fw-bold">Notion</span>
+                        文件管理，具備良好的跨部門溝通與團隊協作能力。期望結合跨領域背景與技術專長，打造直覺且友善的使用者體驗，為產品與品牌創造實質價值。
                     </p>
                 </div>
                 <div class="col-lg-7 project">
@@ -143,14 +146,21 @@
                                 <div class="project-date">
                                     2024/09 - 2025/03
                                 </div>
-                                <div class="project-tag mt-1">#React #Redux Toolkit #GSAP #React Hook Form #Swiper</div>
+                                <div class="project-tag mt-1 fw-bold">#React #Redux Toolkit #GSAP #React Hook Form #Swiper</div>
                             </div>
                         </div>
                         <p>剩食分享平台，用戶可發布貼文分享、申請領取剩餘的食物，促進資源共享並減少浪費。平台支持貼文發佈、搜尋篩選、預約領取和社群互動功能。</p>
+                        <p>
+                            在專案中，我負責追蹤專案進度，確保開發流程順利推進。同時主導 RWD 切版，讓介面能適應多種裝置。
+                            技術實作方面，我開發了貼文篩選與編輯功能，並優化表單驗證與資料處理流程，提升使用者快速找到所需內容的效率與互動體驗。
+                        </p>
                         <ul>
-                            <li>運用 Redux Toolkit 管理登入狀態</li>
-                            <li>實現響應式導航和動態篩選搜尋功能</li>
-                            <li>使用 React Router 建構單頁應用路由系統</li>
+
+                            <li>運用 <span class="fw-bold">GitHub</span> 進行版本控制，與團隊協作開發、管理分支與合併流程。</li>
+                            <li>實作響應式畫面與搜尋篩選功能，優化多裝置操作體驗與資訊檢索效率。</li>
+                            <li>使用 <span class="fw-bold">React Router</span> 建構單頁應用<span class="fw-bold">（SPA）</span>路由系統。
+                            </li>
+                            <li>搭配 <span class="fw-bold">React Hook Form</span> 表單驗證，提升輸入資料的正確性與使用體驗。</li>
                         </ul>
                     </div>
                     <div class="project-item mt-4">
@@ -170,49 +180,59 @@
                                 <div class="project-date">
                                     2024/01 - 2024/04
                                 </div>
-                                <div class="project-tag mt-1">#Vue #Vee validate #Vite #Pinia #Bootstrap #Axios </div>
+                                <div class="project-tag mt-1 fw-bold">#Vue #Vee validate #Vite #Pinia #Bootstrap #Axios </div>
                             </div>
                         </div>
                         <p>這是個貓咪服飾、配件電商平台，用戶可以將商品加入購物車、結帳送出訂單、套用優惠券。後台可以編輯、新增和刪除商品。</p>
                         <ul>
-                            <li>利用 Composition API 進行程式狀態管理和邏輯重用</li>
-                            <li>使用 Bootstrap 框架來撰寫 CSS 和響應式網頁設計(RWD)</li>
-                            <li>表單驗證功能，確保用戶輸入有效性的資料。</li>
+                            <li>使用 <span class="fw-bold">Composition API</span> 管理程式狀態並進行邏輯模組化與重用，提高程式維護性與可讀性。</li>
+                            <li>透過 <span class="fw-bold">Pinia</span> 管理購物車的狀態，實作商品新增、刪除、數量變更等功能，確保資料一致性與使用者操作流暢性。</li>
+                            <li>運用 <span class="fw-bold">Bootstrap</span> 框架進行樣式撰寫與響應式網頁設計<span class="fw-bold">（RWD）</span>。</li>
+                            <li>使用 <span class="fw-bold">Vee validate</span> 進行表單驗證功能，確保用戶輸入有效性的資料。</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row flex-lg-row-reverse">
                 <div class="col-lg-7 skills mt-3">
                     <h2 class="fs-4 fw-bold">技能</h2>
                     <div class="mt-3 mt-lg-2 border-green border"></div>
                     <h3 class="fs-6 fw-bold text-green mt-2">React</h3>
-                    <ul class="skill-content-react">
-                        <li>熟悉 React Hook 基本語法</li>
-                        <li>使用 Redux Toolkit 實作狀態管理</li>
-                        <li>使用 React Hook Form 實作表單驗證</li>
-                        <li>使用 React Router 實現單頁應用（SPA）</li>
-                    </ul>
-                    <h3 class="fs-6 fw-bold text-green">Vue</h3>
-                    <ul class="skill-content-vue">
-                        <li>熟悉 Vue Composition API 與元件設計模式</li>
-                        <li>使用 Vue Router 建構 SPA 應用，整合 Pinia 管理狀態</li>
-                        <li>使用 Vite 建立開發環境並優化打包效能</li>
-                    </ul>
-                    <h3 class="fs-6 fw-bold text-green">JavaScript / ES6+</h3>
-                    <ul class="skill-content-js">
-                        <li>掌握 JavaScript 基本語法</li>
-                        <li>DOM 操作與事件處理</li>
-                        <li>Axios 串接 RESTful API</li>
-                        <li>ESLint standard - 維持程式碼品質</li>
-                    </ul>
-                    <h3 class="fs-6 fw-bold text-green">HTML5 / CSS / SCSS </h3>
-                    <ul class="skill-content-html-css">
-                        <li>使用語意化標籤，提升網頁可讀性</li>
-                        <li>Bootstrap 5 實現 RWD 響應式設計</li>
-                        <li>SCSS 進行模組化樣式開發</li>
-                        <li>實作動畫效果與互動體驗</li>
-                    </ul>
+                    <div class="skill-content-react">
+                        <span>#React Hook</span>
+                        <span>#Redux Toolkit</span>
+                        <span>#React Hook Form</span>
+                        <span>#React Router</span>
+                    </div>
+                    <h3 class="fs-6 fw-bold text-green mt-2">Vue</h3>
+                    <div class="skill-content-vue">
+                        <span>#Vue Composition API</span>
+                        <span>#Vue Router</span>
+                        <span>#Pinia</span>
+                        <span>#Vee validate</span>
+                        <span>#Vite</span>
+                    </div>
+                    <h3 class="fs-6 fw-bold text-green mt-2">JavaScript</h3>
+                    <div class="skill-content-js">
+                        <span>#JavaScript ES6+</span>
+                        <span>#Event Loop</span>
+                        <span>#Axios</span>
+                        <span>#ESLint</span>
+                    </div>
+                    <h3 class="fs-6 fw-bold text-green mt-2">HTML5 / CSS3</h3>
+                    <div class="skill-content-js">
+                        <span>#Bootstrap 5</span>
+                        <span>#RWD</span>
+                        <span>#SCSS</span>
+                        <span>#GSAP</span>
+                    </div>
+                    <h3 class="fs-6 fw-bold text-green mt-2">Others</h3>
+                    <div class="skill-content-others">
+                        <span>#GitHub</span>
+                        <span>#Git</span>
+                        <span>#Notion</span>
+                        <span>#Figma</span>
+                    </div>
                 </div>
                 <div class="col-lg-5 experience mt-3">
                     <h2 class="fs-4 fw-bold">學經歷</h2>
@@ -256,8 +276,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="deco d-none d-lg-block"></div> -->
             </div>
         </div>
     </div>
